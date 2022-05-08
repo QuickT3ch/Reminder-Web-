@@ -36,14 +36,15 @@
     <!-- add reminder section -->
     <div class="w-25 h-50 d-flex flex-column justify-content-center align-items-center">
         <h1>Add reminder</h1>
-        <div class="addreminderBox d-flex flex-column gap-3">
-            <h3>Reminder Title: </h3>
-            <input type="text" id="reminderDetail" class="w-100 h-25" maxlength="120" required>
-            <h3>Reminder Date:</h3>
-            <input type="datetime-local" name="" id="reminderDate" class="w-100" required>
-            <button class="btn btn-success w-25 align-self-end mt-5" id="addReminder">Add</button>
-        </div>
-        
+
+            <div class="addreminderBox d-flex flex-column gap-3">
+                <h3>Reminder Title: </h3>
+                <input type="text" id="reminderDetail" class="w-100 h-25" maxlength="120" required>
+                <h3>Reminder Date:</h3>
+                <input type="datetime-local" name="" id="reminderDate" class="w-100" required>
+                <button class="btn btn-success w-25 align-self-end mt-5" id="addReminder">Add</button>
+            </div>
+            
     </div>
 
     <!-- icons section -->
@@ -52,11 +53,15 @@
     </div>
 
     <!-- my reminders section -->
-    <div class="w-25 h-50 d-flex flex-column justify-content-center align-items-center">
+    <div class="w-25 h-50 d-flex flex-column justify-content-center align-items-center mainreminderbox">
         <h1>My reminders</h1>
-        <div class="myreminderBox" id="myreminders">
+        <div class="remindersMainbox">
+            <div class="myreminderBox " id="myreminders" >
 
+                
+            </div>
         </div>
+        
     </div>
 
 </div>

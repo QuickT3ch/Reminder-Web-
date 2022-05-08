@@ -12,7 +12,6 @@
     padding:20px;
 }
 
-
 .addreminderBox{
     background-color: white;
     width: 100%;
@@ -25,19 +24,29 @@
     height: 50vh;
 }
 
-.myreminderBox{
+
+
+.remindersMainbox{
     background-color: yellow;
+      
+    width: 100%;
+    height: 90%;
+}
+.myreminderBox{
+  
     width: 100%;
     height: 100%;
-    overflow-y: scroll;
+    overflow-y: auto;
+    
 }
+
+
 
 
 /* contact box absolute */
 .contactBox{
     position: absolute;
     left: 10px;
-   
     padding: 20px;
     border-radius: 30px;
 }
@@ -53,3 +62,33 @@
     top: 20px;
     border-radius: 50%;
 }
+
+
+
+/* scroll bar style */
+
+
+
+
+.myreminderBox::-webkit-scrollbar-track
+{
+	 -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+	
+	border-radius: 10px;
+	background-color:none;
+}
+
+.myreminderBox::-webkit-scrollbar
+{
+	width: 12px;
+	
+}
+
+.myreminderBox::-webkit-scrollbar-thumb
+{
+    
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 0px rgba(0,0,0,.3);
+	background-color: silver;
+}
+
