@@ -1,10 +1,11 @@
 *{
     margin: 0;
     padding: 0;
+
 }
 .mainBox{
-  
-    background-color: green;
+    color: #ffffff;
+    background-color:  #222831;
 }
 
 .mainBox div{
@@ -13,31 +14,40 @@
 }
 
 .addreminderBox{
-    background-color: white;
+    padding-top: 75px !important;
+    background-color: #808080;
     width: 100%;
     height: 100%;
+    position: relative;
 }
 
 .iconsBox{
-    background-color: red;
     width: 6vw;
-    height: 50vh;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    font-size: 50px;   
+}
+
+.iconsBox i:hover{
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 42px #fff, 0 0 82px #fff,0 0 92px #fff;
+    cursor: pointer;
 }
 
 
 
 .remindersMainbox{
-    background-color: yellow;
-      
+    background-color: #808080;
     width: 100%;
     height: 90%;
 }
 .myreminderBox{
-  
+    background-color: #808080;
     width: 100%;
     height: 100%;
     overflow-y: auto;
-    
 }
 
 
@@ -47,20 +57,44 @@
 .contactBox{
     position: absolute;
     left: 10px;
-    padding: 20px;
+    padding: 10px;
     border-radius: 30px;
+
+}
+
+.contactBox div{
+    font-size: 50px;
+    border-radius: 100px;
+    gap: 10px;
+    padding-block: 20px;
+    padding-inline: 10px;
+    background-color: #808080;
+}
+
+.contactBox div a i{
+     color:white;
+}
+
+.contactBox div a:hover{
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff;
+
 }
 
 /* logo box absolute */
 
-.logoBox{
-    background-color: black ;
+.logoBox img{
     position: absolute;
-    width: 100px;
-    height: 100px;
+    width: 75px;
+    height: 75px;
     right: 20px;
     top: 20px;
-    border-radius: 50%;
+  
+}
+
+.logoBox img:hover{
+    -webkit-filter: drop-shadow(0px 0px 7px rgba(255, 255, 255, 1));
+    filter: drop-shadow(0px 0px 7px rgba(255, 255, 255, 1));
+    cursor: pointer;
 }
 
 
@@ -72,8 +106,7 @@
 
 .myreminderBox::-webkit-scrollbar-track
 {
-	 -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
-	
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
 	border-radius: 10px;
 	background-color:none;
 }
@@ -81,14 +114,25 @@
 .myreminderBox::-webkit-scrollbar
 {
 	width: 12px;
-	
 }
 
 .myreminderBox::-webkit-scrollbar-thumb
-{
-    
+{  
 	border-radius: 10px;
 	-webkit-box-shadow: inset 0 0 0px rgba(0,0,0,.3);
-	background-color: silver;
+	background-color: white;
 }
 
+/* add button */
+.addbtn{
+   color: white;
+   position: absolute;
+   right: 15px;
+   bottom: 10px;
+   font-size: 50px;
+}
+
+.addbtn:hover{
+    color: white;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 42px #fff, 0 0 82px #fff,0 0 92px #fff;
+}

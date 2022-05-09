@@ -20,22 +20,20 @@ if ($.cookie("reminders")) {
 $("#addReminder").on("click", 
 ()=>{
     let detail = $("#reminderDetail").val();
-    let dateAndTime = $("#reminderDate").val();
+    let date = $("#reminderDate").val();
+    let time = $("#reminderTime").val();
 
  
-if(!detail || !dateAndTime){
+if(!detail || !date ||!time){
     alert("pleasee fill all the required fields");
 }
 else{
-       // seperate(split) date and time to their own vars
-       let dateAndTImeS = dateAndTime.split("T");
-       let date = dateAndTImeS[0];
-       let time = dateAndTImeS[1];
+       
        
         //add to myreminders list on the screen
         $("#reminderDetail").val("");
         $("#reminderDate").val("");
-        $("#myreminders").append("<div class='d-flex gap-4'>  <input type='radio'>  <p class='reminder'>"+detail+"</p> <p>requierd date: "+dateAndTime+"</p> </div>");
+        $("#myreminders").append("<div class='d-flex gap-4'>  <input type='radio'>  <p class='reminder'>"+detail+"</p> <p>requierd date: "+date+time+"</p> </div>");
         // add to cookie
          addToCookie(detail,date,time);
 }
