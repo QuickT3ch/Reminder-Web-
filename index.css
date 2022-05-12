@@ -136,3 +136,56 @@
     color: white;
     text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 42px #fff, 0 0 82px #fff,0 0 92px #fff;
 }
+
+/* actions button */
+.actions{
+    gap: 20px;
+}
+.actions i{
+    font-size: 20px;
+}
+.actions i:first-child:hover{
+    cursor: pointer;
+    color: lime;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 42px #fff, 0 0 82px #fff,0 0 92px #fff;
+}
+
+.actions i:nth-child(2):hover{
+    cursor: pointer;
+    color: yellow;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 42px #fff, 0 0 82px #fff,0 0 92px #fff;
+
+}
+
+.actions i:last-child:hover{
+    cursor: pointer;
+    color: red;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 42px #fff, 0 0 82px #fff,0 0 92px #fff;
+
+}
+
+/* .actions i:hover{
+    cursor: pointer;
+    color: white;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 42px #fff, 0 0 82px #fff,0 0 92px #fff;
+
+} */
+
+
+/* reminders */
+
+.reminders{
+    border-bottom: 1px white solid;
+}
+
+.reminders p:first-child{
+    font-size: 22px;
+}
+
+.done{
+    text-decoration: line-through;
+    color: lime;
+}
+.done div i{
+    color: white;
+}
