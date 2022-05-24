@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+.mainBox{
+    color: #ffffff;
+    background-color:  #222831;
+}
+
+
+
+/* contact box absolute */
+.contactBox{
+    position: absolute;
+    left: 10px;
+    padding: 10px;
+    border-radius: 30px;
+
+}
+
+.contactBox div{
+    font-size: 50px;
+    border-radius: 100px;
+    gap: 10px;
+    padding-block: 20px;
+    padding-inline: 10px;
+    background-color: #808080;
+}
+
+
+.contactBox div a i{
+    color:white;
+}
+.contactBox div a:first-child i:hover{
+
+   color: #fff;
+   text-shadow: 5px 5px #ff3353fc,
+                -2px -2px cyan;
+
+}
+.contactBox div a:nth-child(2) i:hover{
+   background:-webkit-radial-gradient(32% 106%, circle cover, rgb(255, 225, 125) 0%, rgb(255, 205, 105) 10%, rgb(250, 145, 55) 28%, rgb(235, 65, 65) 42%, transparent 82%), -webkit-linear-gradient(-45deg, rgb(35, 75, 215) 12%, rgb(195, 60, 190) 58%);
+   background: -moz-radial-gradient(32% 106%, circle cover, rgb(255, 225, 125) 0%, rgb(255, 205, 105) 10%, rgb(250, 145, 55) 28%, rgb(235, 65, 65) 42%, transparent 82%), -moz-linear-gradient(-45deg, rgb(35, 75, 215) 12%, rgb(195, 60, 190) 58%);
+   background: -ms-radial-gradient(32% 106%, circle cover, rgb(255, 225, 125) 0%, rgb(255, 205, 105) 10%, rgb(250, 145, 55) 28%, rgb(235, 65, 65) 42%, transparent 82%), -ms-linear-gradient(-45deg, rgb(35, 75, 215) 12%, rgb(195, 60, 190) 58%);
+   background: -o-radial-gradient(32% 106%, circle cover, rgb(255, 225, 125) 0%, rgb(255, 205, 105) 10%, rgb(250, 145, 55) 28%, rgb(235, 65, 65) 42%, transparent 82%), -o-linear-gradient(-45deg, rgb(35, 75, 215) 12%, rgb(195, 60, 190) 58%);
+   background: radial-gradient(circle farthest-corner at 32% 106%, rgb(255, 225, 125) 0%, rgb(255, 205, 105) 10%, rgb(250, 145, 55) 28%, rgb(235, 65, 65) 42%, transparent 82%), linear-gradient(135deg, rgb(35, 75, 215) 12%, rgb(195, 60, 190) 58%);;
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent; 
+}
+
+.contactBox div a:last-child i:hover{
+   color: #43609C;    
+   }
+
+
+
+/* logo box absolute */
+
+.logoBox img{
+    position: absolute;
+    width: 75px;
+    height: 75px;
+    right: 20px;
+    top: 20px;
+  
+}
+
+.logoBox img:hover{
+    -webkit-filter: drop-shadow(0px 0px 7px rgba(255, 255, 255, 1));
+    filter: drop-shadow(0px 0px 7px rgba(255, 255, 255, 1));
+    cursor: pointer;
+}
+
+
+.settingsbox{
+    background-color: white;
+    color: black;
+    margin-top: 20px;
+    border: none;
+    border-radius: 30px;
+    padding: 30px;
+    height: 500px;
+    width: 600px;
+}
+.settingsbox div:first-child{
+    display: flex;
+    width: 100%;
+    
+    gap: 20px;
+    align-items: center;
+}
+
+
+
+/* toogle button for notifications */
+
+.switch {
+    --inactive-bg: #cfd8dc;
+    --active-bg: #00e676;
+    --size: 1.4rem;
+    appearance: none;
+    width: calc(var(--size) * 2.2);
+    height: var(--size);
+    display: inline-block;
+    border-radius: calc(var(--size) / 2);
+    cursor: pointer;
+    background-color: var(--inactive-bg);
+    background-image: radial-gradient(
+        circle calc(var(--size) / 2.1),
+        #222831 100%,
+        #0000 0
+      ),
+      radial-gradient(circle calc(var(--size) / 1.5), #0003 0%, #0000 100%);
+    background-repeat: no-repeat;
+    background-position: calc(var(--size) / -1.75) 0;
+    transition: background 0.2s ease-out;
+  }
+  .switch:checked {
+    background-color: var(--active-bg);
+    background-position: calc(var(--size) / 1.75) 0;
+  }
