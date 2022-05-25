@@ -1,6 +1,7 @@
 var reminders;
 
 $(document).ready(()=>{
+
 //on page loading add already added reminders to the list of my reminders
 if ($.cookie("reminders")) {
     loadContent();
@@ -29,8 +30,11 @@ else{
         //add to myreminders list on the screen
         $("#reminderDetail").val("");
         $("#reminderDate").val("");
+    $("#reminderTime").val("");
         // add to cookie
          addToCookie(detail,date,time);
+
+         // reload the ui
          $("#myreminders").empty();
             loadContent();
         }
@@ -61,6 +65,7 @@ function addToCookie(detail,date,time){
 }
 
 
+//complete task
 $(document).on('click', '.ss', function (e) {
     // your function here
     reminders[this.id].status = true;   
